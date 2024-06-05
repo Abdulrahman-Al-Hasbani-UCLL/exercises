@@ -1,2 +1,4 @@
+import re
 
-# Write your code here
+def only_letters(string):
+    return re.fullmatch(r'[a-zA-Z]*', string)

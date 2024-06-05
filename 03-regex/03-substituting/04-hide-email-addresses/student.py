@@ -1,1 +1,6 @@
-# Write your code here
+import re
+
+def hide_email_addresses(string):
+    def to_astrix(match:re.Match):
+        return '*'*len(match.group(0))
+    return re.sub(r'[a-zA-Z0-9.]*@[a-zA-Z0-9.]*',to_astrix, string)

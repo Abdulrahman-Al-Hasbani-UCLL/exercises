@@ -1,8 +1,8 @@
 class Dragon:
-    element = "ice"
+    #element = "ice"
 
     def __init__(self, element):
-        return
+        self.element = element
 
     def get_breath_damage(self):
         if self.element == "fire":
